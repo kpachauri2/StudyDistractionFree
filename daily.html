@@ -102,14 +102,15 @@
             width: 300px;
             border: 1px solid #ddd;
             margin: 10px;
+            
         }
 
         .content {
             display: none;
-            padding: 0 18px;
+            /* padding: 0 18px; */
             overflow: hidden;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
+            background-color: #f5ae0b;
+            border: 1px solid red;
         }
     </style>
 </head>
@@ -117,7 +118,7 @@
 <body>
     <!-- Header -->
     <header>
-        <h1>How Can I learn This ?</h1>
+        <h1><del style="color: whitesmoke;font-size: medium;">I can't do this task</del><strong style="margin: 5px;font-size:-webkit-xxx-large;color: orange;"> How can I learn this?</strong></h1>
     </header>
 
     <!-- Main Content -->
@@ -130,8 +131,8 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </div>
-        <div>
-            <h2>Engineering Mathematics Crash Course </h2>
+        <div class="video-container">
+            <h2>Eng. Mathematics Crash Course </h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Ni3VFF7GY4xDDSpY&amp;list=PLNyPK_sfNdSTIJGdj6JVpC3tpd9c11WIR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="video-container">
@@ -146,15 +147,18 @@
             <h2>Engineering Mathematics(full course)</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=3TYzM7tWtowNjG88&amp;list=PLvTTv60o7qj_tdY9zH7YceES7jfXiZkAz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-<!-- this is collapsible civ -->
+
+<!-- this is collapsible  -->
+<section>
         <div class="collapsible" onclick="toggleCollapsible()">Click to Toggle</div>
     <div class="content">
         <!-- <p>This is the collapsible content. It can be hidden or shown by clicking the button above.</p> -->
-        <div class="video-container">
+        <!-- <div class="video-container"> -->
             <h2>Engineering Mathematics (full course)</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=5OkmslCSleLgy8I2&amp;list=PLU6SqdYcYsfLPxjd-k-MaoG7qgRQ-2fKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+        <!-- </div> -->
     </div>
+</section>
 
     <script>
         function toggleCollapsible() {
