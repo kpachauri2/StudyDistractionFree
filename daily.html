@@ -10,6 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
 
         header {
@@ -21,6 +22,9 @@
 
         main {
             padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
 
         footer {
@@ -36,7 +40,8 @@
             margin-top: 20px;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
@@ -51,6 +56,61 @@
             width: 100%;
             height: 315px;
         }
+
+        a {
+            text-align: center;
+            color: orange;
+            background-color: whitesmoke;
+        }
+
+        .video-container {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        div {
+            margin: 0.5%;
+        }
+
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #007bff;
+        }
+
+        footer img {
+            width: 25px;
+            height: 25px;
+            margin: 0 5px;
+        }
+        .collapsible {
+            background-color: #f1f1f1;
+            cursor: pointer;
+            padding: 18px;
+            text-align: left;
+            width: 300px;
+            border: 1px solid #ddd;
+            margin: 10px;
+        }
+
+        .content {
+            display: none;
+            padding: 0 18px;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
     </style>
 </head>
 
@@ -62,8 +122,46 @@
 
     <!-- Main Content -->
     <main>
-        <h2>Genral Aptitude daily </h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=12dRawn4G7JQrZU7&amp;list=PLs5_Rtf2P2r6tRocC0MJp4vghbANkCeJR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="video-container">
+            <h2>Genral Aptitude daily </h2>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/videoseries?si=12dRawn4G7JQrZU7&amp;list=PLs5_Rtf2P2r6tRocC0MJp4vghbANkCeJR"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div>
+            <h2>Engineering Mathematics Crash Course </h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Ni3VFF7GY4xDDSpY&amp;list=PLNyPK_sfNdSTIJGdj6JVpC3tpd9c11WIR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <h2>c++</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=tH2eC8OdVGV4qOaz&amp;list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <h2>Discrete Mathematics (Full course)</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=rm975K2gx1wdPEuf&amp;list=PLC36xJgs4dxEYmhzVBW7nBdftFZ4xmiF1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <h2>Engineering Mathematics(full course)</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=3TYzM7tWtowNjG88&amp;list=PLvTTv60o7qj_tdY9zH7YceES7jfXiZkAz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+<!-- this is collapsible civ -->
+        <div class="collapsible" onclick="toggleCollapsible()">Click to Toggle</div>
+    <div class="content">
+        <!-- <p>This is the collapsible content. It can be hidden or shown by clicking the button above.</p> -->
+        <div class="video-container">
+            <h2>Engineering Mathematics (full course)</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=5OkmslCSleLgy8I2&amp;list=PLU6SqdYcYsfLPxjd-k-MaoG7qgRQ-2fKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        function toggleCollapsible() {
+            var content = document.querySelector('.content');
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
 
         <!-- Add more videos as needed -->
     </main>
@@ -71,7 +169,70 @@
     <!-- Footer -->
     <footer style="display: flex; width: 100%;">
         <div style="width: 25%;">
-            <div>quote1</div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2"><b>GATE CSE Subject Wise Weightage 2024(expected)</b></th>
+                        </tr>
+                        <tr>
+                            <th><b>Subjects</b></th>
+                            <th><b>Weightage</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>General Aptitude</span></td>
+                            <td><span>15%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Engineering Mathematics</span></td>
+                            <td>5%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Computer Organization</span></td>
+                            <td>11%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Operating Systems</span></td>
+                            <td>10%</span></td>
+                        </tr>
+                        <tr>
+                            <td>DBMS</span></td>
+                            <td>8%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Compiler Design</span></td>
+                            <td>4%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Computer Networks</span></td>
+                            <td>6%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Design and Analysis Algorithms</span></td>
+                            <td>6%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Digital Logic</span></td>
+                            <td>4%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Discrete Mathematics and Graph Theory</span></td>
+                            <td>10%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Programming and Data Structures</span></td>
+                            <td>12%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Theory Of Computation</span></td>
+                            <td>9%</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
         </div>
         <div style="height: 100%; width: 50%;">
             <table>
@@ -110,6 +271,19 @@
                     <td>68-81</td>
                 </tfoot>
             </table>
+            <!-- copyright -->
+            <div>
+                &copy; 2024 Career Elevator. All rights reserved.
+            </div>
+
+            <div>
+                <a href="https://www.facebook.com/#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="https://twitter.com/#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="https://github.com/kpachauri2" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/careerelevatoer" target="_blank"><img src="linkedin-icon.png"
+                        alt="LinkedIn"></a>
+            </div>
         </div>
         <div style="width: 25%;">
             <div>quote2</div>
