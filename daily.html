@@ -60,8 +60,9 @@
         a {
             text-align: center;
             color: orange;
-            background-color: whitesmoke;
+            /* background-color: whitesmoke; */
         }
+
 
         .video-container {
             width: calc(33.33% - 20px);
@@ -94,6 +95,7 @@
             height: 25px;
             margin: 0 5px;
         }
+
         .collapsible {
             background-color: #f1f1f1;
             cursor: pointer;
@@ -102,7 +104,7 @@
             width: 300px;
             border: 1px solid #ddd;
             margin: 10px;
-            
+
         }
 
         .content {
@@ -112,15 +114,30 @@
             background-color: #f5ae0b;
             border: 1px solid red;
         }
+
+        .pg2 {
+            margin: 5px;
+            text-decoration: none;
+            
+        }
     </style>
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <h1><del style="color: whitesmoke;font-size: medium;">I can't do this task</del><strong style="margin: 5px;font-size:-webkit-xxx-large;color: orange;"> How can I learn this?</strong></h1>
-        <a class="pg2" href="index.html">
-            <h1>Home</h2>
+        <h1><del style="color: whitesmoke;font-size: medium;">I can't do this task</del><strong
+                style="margin: 5px;font-size:-webkit-xxx-large;color: orange;"> How can I learn this?</strong></h1>
+        <div style="display: flex; flex-wrap: wrap;text-align: center;">
+            <a class="pg2" href="index.html">Full Playlist</a>
+            <a class="pg2" href="CrashCourse.html">
+                Crash Course
+            </a>
+            <a class="pg2" href="daily.html">
+                Daily Material
+            </a>
+        </div>
+
     </header>
 
     <!-- Main Content -->
@@ -135,39 +152,59 @@
         </div>
         <div class="video-container">
             <h2>Eng. Mathematics Crash Course </h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Ni3VFF7GY4xDDSpY&amp;list=PLNyPK_sfNdSTIJGdj6JVpC3tpd9c11WIR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/videoseries?si=Ni3VFF7GY4xDDSpY&amp;list=PLNyPK_sfNdSTIJGdj6JVpC3tpd9c11WIR"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
         <div class="video-container">
             <h2>c++</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=tH2eC8OdVGV4qOaz&amp;list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/videoseries?si=tH2eC8OdVGV4qOaz&amp;list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
         <div class="video-container">
             <h2>Discrete Mathematics (Full course)</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=rm975K2gx1wdPEuf&amp;list=PLC36xJgs4dxEYmhzVBW7nBdftFZ4xmiF1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/videoseries?si=rm975K2gx1wdPEuf&amp;list=PLC36xJgs4dxEYmhzVBW7nBdftFZ4xmiF1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
         <div class="video-container">
             <h2>Engineering Mathematics(full course)</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=3TYzM7tWtowNjG88&amp;list=PLvTTv60o7qj_tdY9zH7YceES7jfXiZkAz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/videoseries?si=3TYzM7tWtowNjG88&amp;list=PLvTTv60o7qj_tdY9zH7YceES7jfXiZkAz"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
 
-<!-- this is collapsible  -->
-<section>
-        <div class="collapsible" onclick="toggleCollapsible()">Click to Toggle</div>
-    <div class="content">
-        <!-- <p>This is the collapsible content. It can be hidden or shown by clicking the button above.</p> -->
-        <!-- <div class="video-container"> -->
-            <h2>Engineering Mathematics (full course)</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=5OkmslCSleLgy8I2&amp;list=PLU6SqdYcYsfLPxjd-k-MaoG7qgRQ-2fKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <!-- </div> -->
-    </div>
-</section>
+        <!-- this is collapsible  -->
+        <section>
+            <div class="collapsible" onclick="toggleCollapsible()">Click to Toggle</div>
+            <div class="content">
+                <!-- <p>This is the collapsible content. It can be hidden or shown by clicking the button above.</p> -->
+                <!-- <div class="video-container"> -->
+                <h2>Engineering Mathematics (full course)</h2>
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?si=5OkmslCSleLgy8I2&amp;list=PLU6SqdYcYsfLPxjd-k-MaoG7qgRQ-2fKc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <!-- </div> -->
+            </div>
+        </section>
 
-    <script>
-        function toggleCollapsible() {
-            var content = document.querySelector('.content');
-            content.style.display = content.style.display === 'none' ? 'block' : 'none';
-        }
-    </script>
+        <script>
+            function toggleCollapsible() {
+                var content = document.querySelector('.content');
+                content.style.display = content.style.display === 'none' ? 'block' : 'none';
+            }
+        </script>
 
         <!-- Add more videos as needed -->
     </main>
